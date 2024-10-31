@@ -1,0 +1,404 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414
+}
+
+header {
+    background-color: #141414;
+    color: yellow;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.movie-container {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: 141414;
+    color: yellow;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-container img {
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.movie-info {
+    max-width: 600px;
+}
+
+.movie-info h2 {
+    margin-top: 0;
+}
+
+.video-container {
+    margin: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 80%;
+    height: 450px;
+}
+
+.home-text {
+    color: white;
+}
+
+.movies-text {
+    color: yellow;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Căn chỉnh các mục theo chiều ngang */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Đẩy phần bên trái vào sát biên */
+}
+
+
+.footer-left {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.footer-center {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.footer-right {
+    flex-basis: 30%;
+    text-align: left;
+    margin-bottom: 75px;
+}
+
+.home-text {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.movies-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-left p {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.footer-center h4{
+    margin: 0;
+    font-size: 18px;
+    color: yellow;
+}
+.footer-right h4 {
+    margin: 0;
+    font-size: 20px;
+    color: yellow;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.footer-category, .footer-menu {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-menu {
+    margin-left: 20px;
+}
+
+.footer-category h4, .footer-menu h4 {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-category ul li, .footer-menu ul li {
+    color: yellow;
+    margin-top: 10px;
+}
+
+.footer-category ul li:hover, .footer-menu ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Chỉnh lại khoảng cách giữa các mục trong ul */
+.footer-category ul,
+.footer-menu ul,
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-category ul li,
+.footer-menu ul li {
+    margin-bottom: 8px;
+}
+
+.footer-category ul li a,
+.footer-menu ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-category ul li a:hover,
+.footer-menu ul li a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Khoảng cách giữa các icon */
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer-left p {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+/* Navigation links */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Căn chỉnh các phần logo, liên kết và tìm kiếm */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #141414;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.home-text {
+    color: yellow;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.movies-text {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #f0e68c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .search-container input {
+        width: 100%;
+    }
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    min-width: 150px;
+    top: 40px;
+    z-index: 1;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    padding: 8px 0;
+    color: yellow;
+}
+
+.dropdown-content ul li:hover {
+    background-color: #141414;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#movieResults {
+    position: absolute; /* Đặt vị trí cho kết quả tìm kiếm */
+    right: 20px; /* Căn lề bên phải */
+    top: 60px; /* Căn lề từ trên xuống */
+    background-color: rgba(0, 0, 0, 0.8); /* Nền trong suốt */
+    color: yellow; /* Màu chữ vàng */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    z-index: 1000; /* Đảm bảo nằm trên cùng */
+    background-color: #141414;
+}
+
+#movieResults div {
+    margin-bottom: 10px; /* Khoảng cách giữa các kết quả */
+}
+
+#movieResults a {
+    color: yellow; /* Màu liên kết */
+    text-decoration: none; /* Gạch chân liên kết */
+}
+
+.episode-list {
+    display: flex;
+    justify-content: left; /* Căn giữa danh sách tập */
+    gap: 10px; /* Khoảng cách giữa các nút */
+    padding: 20px;
+    background-color: #141414; /* Nền của danh sách tập */
+}
+
+.episode-list button {
+    background-color: yellow; /* Màu nền của nút */
+    border: none;
+    color: #141414;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 16px; /* Tạo khoảng cách bên trong nút */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.episode-list button:hover {
+    background-color: #f1e89a; /* Đổi màu khi di chuột */
+}
+
+.watch-button{
+    background-color: yellow;
+    border: none;
+    color: #141414;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 16px; /* Tạo khoảng cách bên trong nút */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

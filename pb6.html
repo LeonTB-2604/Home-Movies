@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peaky Blinder</title>
+    <link rel="stylesheet" href="pb.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="HomeMovies.html"><span class="home-text">Home</span><span class="movies-text">Movies</span></a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="news.html">New</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li class="dropdown">
+                <a href="#" value="options">Genre</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="action.html">Action</a></li>
+                        <li><a href="comedy.html">Comedy</a></li>
+                        <li><a href="horror.html">Horror</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                        <li><a href="romance.html">Romance</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Search bar with ID -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search" onkeyup="searchMovies()">
+            <button id="searchButton">Search</button>
+        </div>
+    </nav>
+
+    <!-- Div to display search results -->
+    <div id="movieResults"></div>
+
+    <div id="movieList"></div>
+
+    <header>
+        <h1>Peaky Blinders</h1>
+    </header>
+    <hr>
+
+    <div class="movie-container">
+        <img src="https://m.media-amazon.com/images/I/71Yeff-qeaL._AC_UF894,1000_QL80_.jpg">
+        <div class="movie-info">
+            <p><strong>Genre: Series, Action, Drama</strong></p>
+            <p><strong>Country: England</strong></p>
+            <p><strong>Year: 2013</strong></p>
+            <P><strong>Episode: 6</strong></P>
+            <p><strong>Synopsis</strong> Set in early 19th century England, Peaky Blinders is about the Shelby family, the leaders of the famous Peaky Blinders gang in the drunk world whose brains are Tommy Shelby, the second son. The film is Tommy's progression in the additional world with brutal motifs and tricks. In addition, viewers will also meet many real historical characters and events such as Winston Churchill, Ireland's resistance war for independence from Great Britain...</p>
+        </div>
+    </div>
+
+    <div class="video-container"> 
+        <iframe width="868" height="488" src="https://www.youtube.com/embed/-bmekGeyfC0" title="For the cause - Peaky Blinders: Series 2 Episode 6 Preview - BBC Two" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="episode-list">
+            <a href="pb1.html"><button onclick="episode(1)">1</button></a>
+            <a href="pb2.html"><button onclick="episode(2)">2</button></a>
+            <a href="pb3.html"><button onclick="episode(3)">3</button></a>
+            <a href="pb4.html"><button onclick="episode(4)">4</button></a>
+            <a href="pb5.html"><button onclick="episode(5)">5</button></a>
+            <a href="pb6.html"><button onclick="episode(6)">6</button></a>
+        </div>   
+        
+</body>
+<footer>
+    <div class="footer-container">
+        <!-- Left: Logo and Description -->
+        <div class="footer-left">
+            <span class="home-text">Home</span><span class="movies-text">Movies</span>
+            <p>HomeMovies is a family movie site where everyone can relax after a tiring day and enjoy a movie together, we have covered all the genres you want to watch.</p>
+        </div>
+        <!-- Center: Category and Menu -->
+        <div class="footer-center">
+            <div class="footer-category">
+                <h4>Genres</h4>
+                <ul>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="comedy.html">Comedy</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="tou.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right: Social Media -->
+        <div class="footer-right">
+            <h4>Social Media</h4>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 HomeMovies</p>
+    </div>
+</footer>
+</html>

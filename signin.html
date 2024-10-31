@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="signin.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center align-items-center">
+            <!-- Phần hình ảnh -->
+            <div class="col-lg-5 d-flex flex-column align-items-center">
+                <img src="https://img.freepik.com/premium-vector/mobile-concept-illustration_1190180-603.jpg?w=740" alt="Minh họa" class="img-fluid mb-3" style="max-width: 250px;">
+                <a href="signup.html" class="text-primary">Tạo tài khoản mới</a>
+            </div>
+            
+            <!-- Phần form đăng nhập -->
+            <div class="col-lg-5">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Đăng nhập</h3>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="username">Tên đăng nhập</label>
+                                <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mật khẩu</label>
+                                <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                            <p class="text-center mt-3">Hoặc đăng nhập bằng</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="https://www.facebook.com/" class="btn btn-outline-primary mx-1">Facebook</a>
+                                <a href="https://twitter.com/" class="btn btn-outline-info mx-1">Twitter</a>
+                                <a href="https://www.google.com/4" class="btn btn-outline-danger mx-1">Google</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="signin.js"></script>
+</body>
+</html>

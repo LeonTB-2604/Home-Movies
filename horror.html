@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror</title>
+    <link rel="stylesheet" href="horror.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="HomeMovies.html"><span class="home-text">Home</span><span class="movies-text">Movies</span></a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="news.html">New</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="series.html">Series</a></li>
+            <li class="dropdown">
+                <a href="#" value="options">Genre</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="action.html">Action</a></li>
+                        <li><a href="comedy.html">Comedy</a></li>
+                        <li><a href="horror.html">Horror</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                        <li><a href="romance.html">Romance</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Search bar with ID -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search" onkeyup="searchMovies()">
+            <button id="searchButton">Search</button>
+        </div>
+    </nav>
+
+    <!-- Div to display search results -->
+    <div id="movieResults"></div>
+
+    <div id="movieList"></div>
+
+    <section id="movies">
+        <h2>Horror</h2>
+        <hr>
+        <div class="movie-grid">
+            <div class="movie-item">
+                <a href="twd.html">
+                    <img src="https://m.media-amazon.com/images/I/61g-Tch64uL._AC_UF894,1000_QL80_.jpg">
+                    <h3>The Walking Dead</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <!-- Left: Logo and Description -->
+        <div class="footer-left">
+            <span class="home-text">Home</span><span class="movies-text">Movies</span>
+            <p>HomeMovies is a family movie site where everyone can relax after a tiring day and enjoy a movie together, we have covered all the genres you want to watch.</p>
+        </div>
+        <!-- Center: Category and Menu -->
+        <div class="footer-center">
+            <div class="footer-category">
+                <h4>Genres</h4>
+                <ul>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="comedy.html">Comedy</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="tou.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right: Social Media -->
+        <div class="footer-right">
+            <h4>Social Media</h4>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 HomeMovies</p>
+    </div>
+</footer>
+</html>

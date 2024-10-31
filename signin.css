@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}
+
+.text-primary {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn {
+    border-radius: 5px;
+}

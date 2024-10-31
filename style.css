@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+}
+
+/* CSS for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    padding: 10px;
+    color: yellow;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-text {
+    color: white;
+}
+
+.movies-text {
+    color: yellow;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links li a {
+    color: yellow;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background-color: yellow;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Movie grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.movie-item {
+    position: relative;
+    text-align: center;
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.movie-item h3 {
+    font-size: 16px;
+    color: yellow;
+    margin-left: 65px;
+    
+}
+.new a, .movies a, .series a{
+    color: yellow;
+    padding: 40px;
+    text-decoration: none;
+}
+
+/* Play button effect */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-item:hover img {
+    transform: scale(1.05);
+}
+
+.movie-item:hover .play-button {
+    opacity: 1;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    min-width: 150px;
+    top: 40px;
+    z-index: 1;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    padding: 8px 0;
+    color: yellow;
+}
+
+.dropdown-content ul li:hover {
+    background-color: #141414;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left{
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.footer-center{
+    flex-basis: 30%;
+    text-align: center;
+}
+.footer-right {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.home-text {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.movies-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-left p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.footer-center h4{
+    margin: 0;
+    font-size: 18px;
+    color: yellow;
+}
+.footer-right h4 {
+    color: yellow;
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 60px;
+}
+
+.footer-category, .footer-menu {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-menu {
+    margin-left: 20px;
+}
+
+.footer-category h4, .footer-menu h4 {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-category ul li, .footer-menu ul li {
+    color: yellow;
+    margin-top: 10px;
+}
+
+.footer-category ul li:hover, .footer-menu ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Chỉnh lại khoảng cách giữa các mục trong ul */
+.footer-category ul,
+.footer-menu ul,
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-category ul li,
+.footer-menu ul li {
+    margin-bottom: 8px;
+}
+
+.footer-category ul li a,
+.footer-menu ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-category ul li a:hover,
+.footer-menu ul li a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .footer-left p {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+#movieResults {
+    position: absolute; /* Đặt vị trí cho kết quả tìm kiếm */
+    right: 20px; /* Căn lề bên phải */
+    top: 60px; /* Căn lề từ trên xuống */
+    background-color: rgba(0, 0, 0, 0.8); /* Nền trong suốt */
+    color: yellow; /* Màu chữ vàng */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    z-index: 1000; /* Đảm bảo nằm trên cùng */
+    background-color: #141414;
+}
+
+#movieResults div {
+    margin-bottom: 10px; /* Khoảng cách giữa các kết quả */
+}
+
+#movieResults a {
+    color: yellow; /* Màu liên kết */
+    text-decoration: none; /* Gạch chân liên kết */
+}

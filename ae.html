@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers: Endgame</title>
+    <link rel="stylesheet" href="ae.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+           <a href="HomeMovies.html"><span class="home-text">Home</span><span class="movies-text">Movies</span></a>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="news.html">New</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="#">Series</a></li>
+            <li class="dropdown">
+                <a href="#" value="options">Genre</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="action.html">Action</a></li>
+                        <li><a href="comedy.html">Comedy</a></li>
+                        <li><a href="horror.html">Horror</a></li>
+                        <li><a href="drama.html">Drama</a></li>
+                        <li><a href="romance.html">Romance</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search" onkeyup="searchMovies()">
+            <button id="searchButton">Search</button>
+        </div>
+    </nav>
+
+    <!-- Div to display search results -->
+    <div id="movieResults"></div>
+
+    <div id="movieList"></div>
+
+    <header>
+        <h1>Avengers: Endgame</h1>
+    </header>
+    <hr>
+
+    <div class="movie-container">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg">
+        <div class="movie-info">
+            <h2>Info</h2>
+            <p><strong>Genre: Movies, Action</strong></p>
+            <p><strong>Country: USA</strong></p>
+            <p><strong>Year: 2019</strong></p>
+            <p><strong>Duration: 181 minutes</strong></p>
+            <p><strong>Synopsis:</strong> The movie takes place after the events of "Avengers: Infinity War" (2018), where Thanos successfully collected all six Infinity Stones and wiped out half of all life in the universe with a snap of his fingers. "Endgame" follows the remaining Avengers as they try to reverse the devastating effects of the Snap and defeat Thanos once and for all.</p>
+        </div>
+    </div>
+
+    <div class="video-container"> 
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/TcMBFSGVi1c" title="Marvel Studios&#39; Avengers: Endgame - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+    </div>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <!--Left: Logo and Description-->
+        <div class="footer-left">
+        <span class="home-text">Home</span><span class="movies-text">Movies</span>
+        <p>HomeMovies is a family movie site where everyone can relax after a tiring day and enjoy a movie together, we have covered all the genres you want to watch.</p>
+        </div>
+        <!--Center: Category and Menu-->
+        <div class="footer-center">
+            <div class="footer-category">
+                <h4>Genres</h4>
+                <ul>
+                    <li><a href="action.html">Action</a></li>
+                    <li><a href="comedy.html">Comedy</a></li>
+                    <li><a href="drama.html">Drama</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="tou.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right: Social Media -->
+        <div class="footer-right">
+            <h4>Social Media</h4>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 HomeMovies</p>
+    </div>
+</footer>
+</html>
